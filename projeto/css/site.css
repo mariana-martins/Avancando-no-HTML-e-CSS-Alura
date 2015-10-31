@@ -1,0 +1,179 @@
+body {
+    font-family: "Crimson Text", serif;
+    background-color: #F2FFFC;
+    line-height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div {
+    width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main h1 {
+    font-family: "Arial", sans-serif;
+    font-size: 300%;
+    color: #FFFFFF;
+    background: #851944;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: .5rem solid #000000;
+    text-transform: uppercase;
+}
+
+main a {
+    color:#851944;
+}
+
+main div {
+    padding: 30px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic:
+}
+
+h1 {
+    text-shadow: 5px 5px #000;
+}
+
+h1, h2 {
+    font-family: "Open Sans Condensed", sans-serif;
+    clear:both;
+}
+    
+p {
+    text-align: justify;
+    margin: 20px 0;
+}
+    
+
+.navegacao {
+    background:#3C1D3D;
+    color: #F2FFFC;
+    padding-top: calc(300px + 1em);
+}
+
+.navegacao a:hover, .navegacao a:focus {
+    text-shadow: 0 0 2px pink;
+}
+
+.navegacao h1{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+ul li a {
+    color: inherit;
+    font-family: "Open Sans Condensed", sans-serif;
+    margin: 10px;
+}
+
+.rodape-pagina {
+    color:#FFF;
+    padding: 10px;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: radial-gradient(ellipse at left bottom,
+    rgba(60, 29, 61, 0.8),
+    rgba(60, 29, 61, 0.8) 65%,
+    black 65%,
+    black 70%,
+    transparent 70%,
+    transparent);
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+}
+
+.rede-social li {
+    display:inline-block;
+}
+
+.rede-social a {
+    width: 20px;
+    height: 20px;
+    display: block;
+    text-indent: -9999px;
+    padding: 10px;
+    margin: 0;
+}
+
+.github {
+    background-image: url(../img/github.png);
+}
+
+.twitter {
+    background-image: url(../img/twitter.png);
+}
+
+.linkedin {
+    background-image: url(../img/linkedin.png);
+}
+
+main {
+    width: calc(100% - 0.9 * 250px);
+    float: left;
+    padding-bottom: 80px;
+    flex-grow: 1;
+}
+
+aside {
+    clear: right;
+    box-sizing: border-box;
+    text-align: center;
+    border-left: 10px solid #000;
+    border-bottom: 10px solid #000;
+    width: calc(0.9 * 250px);
+}
+
+.foto {
+    border-left: 10px solid #000;
+    border-bottom: 10px solid #000;
+    box-sizing: border-box;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+.conteudo-principal a:hover, .conteudo-principal a:focus {
+    color: red;
+}
+
+.rede-social a:hover::after, .rede-social a:focus::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-indent: 0;
+    width: 300%;
+    background: black;
+    font-size: .75em;
+}
+
+.rede-social a {
+    position: relative;
+}
+
+.rede-social a:hover::before, .rede-social a:focus::before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(.5em) rotate(45deg);
+}
+    

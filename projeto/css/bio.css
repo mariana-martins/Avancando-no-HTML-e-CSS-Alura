@@ -1,0 +1,94 @@
+.citacao-bio:nth-of-type(odd) {
+    background: #D9E5E3;
+    padding: 1em;
+    border: .5em solid #C2CCCA;
+    width: 30ch;
+    box-sizing: border-box;
+    margin: 1em 2em;
+    float: right;
+    transition: transform 1s linear, box-shadow 1s ease-in;
+    transition-delay: 0s, 1s;
+}
+
+.citacao-bio:nth-of-type(even) {
+    background: #D9E5E3;
+    padding: 1em;
+    border: .5em solid #C2CCCA;
+    width: 30ch;
+    box-sizing: border-box;
+    margin: 1em 2em;
+    float: left;
+    transition: transform 1s linear, box-shadow 1s ease-in;
+    transition-delay: 0s, 1s;
+}
+
+.citacao-bio:hover,
+.citacao-bio:focus {
+    box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+}
+
+.citacao-bio:nth-of-type(odd):hover,
+.citacao-bio:nth-of-type(odd):focus {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.citacao-bio:nth-of-type(even):hover,
+.citacao-bio:nth-of-type(even):focus {
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.container > p:first-letter {
+    font-weight: bold;
+    color: #3C1D3D;
+    text-shadow: 1px 1px #000;
+    font-size: 200%;
+}
+
+.citacao-bio::before {
+    content: '“';
+    position: absolute;
+    font-size: 10em;
+    color: #bbb;
+    line-height: .8;
+}
+
+.citacao-bio > p {
+    position: relative;
+}
+
+.habilidade {
+    background-color: #851944;
+    color: #FFF;
+    font-weight: bold;
+}
+
+table [colspan] {
+  text-align: center;
+  font-style: italic;
+}
+
+table [rowspan] {
+  vertical-align: middle;
+}
+
+.cabecalho {
+    background-color: #3C1D3D;
+    color: #FFF;
+    font-weight: bold;
+}
+
+td {
+    background-color: #EEE;
+    color: #000;
+    padding: 1em;
+}
+
+th {
+    padding: 1em;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0.25em;
+    margin: 1em 0;
+}
